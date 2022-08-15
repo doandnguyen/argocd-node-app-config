@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: node-app
+  name: prod-namespace
 spec:
   selector:
     matchLabels:
-      app: node-app
+      app: prod-namespace
   replicas: 2
   template:
     metadata:
       labels:
-        app: node-app
+        app: prod-namespace
     spec:
       containers:
-        - name: node-app
-          image: doandnguyen/examplenode-dev:4
+        - name: prod-namespace
+          image: doandnguyen/node-prod:1
           ports:
             - containerPort: 3000
