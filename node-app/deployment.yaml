@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: prod-namespace
-          image: doandnguyen/node-prod:5
+          image: doandnguyen/node-prod:6
           ports:
             - containerPort: 3000
